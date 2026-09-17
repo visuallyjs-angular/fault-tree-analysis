@@ -1,0 +1,26 @@
+{
+  "loadbalancer": {
+    "label": "Load Balancer",
+    "description": "High-availability traffic distributor for incoming requests.",
+    "monthlyPrice": 50.00,
+    "color": "#f02f33"
+  },
+  "server": {
+    "label": "Server",
+    "description": "Scalable virtual machine for running applications and services.",
+    "monthlyPrice": 45.00,
+    "color": "#539b94"
+  },
+  "database": {
+    "label": "Database",
+    "description": "Fully managed relational or NoSQL database service.",
+    "monthlyPrice": 80.00,
+    "color": "#e53388"
+  },
+  "vpc": {
+    "label": "VPC",
+    "description": "Isolated cloud network environment for secure resource deployment.",
+    "monthlyPrice": 20.00,
+    "color": "rgb(35, 89, 49)"
+  }
+}

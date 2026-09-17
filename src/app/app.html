@@ -1,0 +1,29 @@
+<div class="vjs-fta-container">
+    <div class="vjs-fta-left-palette">
+        <div style="padding: 15px; border-bottom: 1px solid #ccc; font-weight: bold;">FTA Symbols</div>
+        <vjs-diagram-palette [allowDropOnEdge]="true" [showLabels]="true"></vjs-diagram-palette>
+    </div>
+
+    <div class="vjs-fta-center-canvas">
+        <vjs-diagram [options]="diagramOptions" [modelOptions]="modelOptions" [url]="url">
+            <vjs-controls></vjs-controls>
+        </vjs-diagram>
+    </div>
+
+    <div class="vjs-fta-right-sidebar">
+        <div class="vjs-fta-sidebar-content">
+            <div class="vjs-fta-sidebar-section">
+                <div class="vjs-fta-sidebar-section-header">Inspector</div>
+                <fta-inspector></fta-inspector>
+            </div>
+            <div class="vjs-fta-sidebar-section">
+                <div class="vjs-fta-sidebar-section-header">Cut Sets</div>
+                <fta-cut-sets></fta-cut-sets>
+            </div>
+            <div class="vjs-fta-sidebar-section">
+                <div class="vjs-fta-sidebar-section-header">Risk (Fussell-Vesely)</div>
+                <fta-risk-chart></fta-risk-chart>
+            </div>
+        </div>
+    </div>
+</div>

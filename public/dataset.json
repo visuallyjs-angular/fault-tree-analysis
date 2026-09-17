@@ -1,0 +1,17 @@
+{
+  "nodes": [
+    { "id": "1", "label": "System Failure", "x": 300, "y": -200, "type": "top-event", "category": "fta" },
+    { "id": "2", "label": "AND", "x": 270, "y": 180, "type": "and-gate", "category": "fta" },
+    { "id": "3", "label": "A Fails", "x": 160, "y": 350, "type": "basic-event", "category": "fta", "probability": 0.05 },
+    { "id": "4", "label": "B Fails", "x": 350, "y": 350, "type": "basic-event", "category": "fta", "probability": 0.02 },
+    { "id": "5", "label": "C Fails", "x": 450, "y": 180, "type": "basic-event", "category": "fta", "probability": 0.02 },
+    { "id": "6", "label": "OR", "x": 320, "y": 0, "type": "or-gate", "category": "fta" }
+  ],
+  "edges": [
+    { "source": "6", "target": "1" },
+    { "source": "2", "target": "6" },
+    { "source": "3", "target": "2" },
+    { "source": "4", "target": "2" },
+    { "source": "5", "target": "6" }
+  ]
+}
